@@ -1,0 +1,13 @@
+execve("target/release/no-std-printf", ["target/release/no-std-printf"], 0x7ffc9e961770 /* 54 vars */) = 0
+brk(NULL)                               = 0x55563a275000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffd09bb5010) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f5fc96a4000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+arch_prctl(ARCH_SET_FS, 0x7f5fc96a4d80) = 0
+set_tid_address(0x7f5fc96a5050)         = 266687
+set_robust_list(0x7f5fc96a5060, 24)     = 0
+rseq(0x7f5fc96a56a0, 0x20, 0, 0x53053053) = 0
+mprotect(0x55563868e000, 4096, PROT_READ) = 0
+write(1, "Hello, world!\n", 14)         = 14
+exit(0)                                 = ?
++++ exited with 0 +++
